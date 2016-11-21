@@ -18,7 +18,7 @@
         $(document).ready(function() {
             $("a").zclip({
                 path: 'zclip/ZeroClipboard.swf',
-                copy: $('#qqq').val(),
+                copy: $('#qqq').text(),
                 afterCopy: function() {
                     // console.log('copied');
                     alert('Dane w schowku. Możesz je teraz wklejać...');
