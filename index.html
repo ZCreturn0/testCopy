@@ -1,0 +1,32 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        
+        <title>zClip - test</title>
+        
+        <script type="text/javascript" src="https://cdn.bootcss.com/jquery/3.1.1/jquery.min.js"></script>
+        <script type="text/javascript" src="zclip/jquery.zclip.js"></script>
+        
+    </head>
+    
+    <body>
+        <span id="qqq">123qwerdf</span>
+        <a href="javascript:;">aaaaaaaaaaaa</a>
+        
+        <script type="text/javascript">
+        $(document).ready(function() {
+            $("a").zclip({
+                path: 'zclip/ZeroClipboard.swf',
+                copy: $('#qqq').val(),
+                afterCopy: function() {
+                    // console.log('copied');
+                    alert('Dane w schowku. Możesz je teraz wklejać...');
+                }
+            });
+        });
+        </script>
+        
+    </body>
+    
+</html>
